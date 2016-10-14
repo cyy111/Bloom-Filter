@@ -1,5 +1,6 @@
 
 def checkWord(word, hashFamily, bitArray):
+    """check if the word can be map in bit array correctly with hash family"""
 
     m = len(bitArray)
 
