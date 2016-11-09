@@ -2,7 +2,10 @@ import hashlib
 
 
 def genHashFamily(k):
-    """generate k hash functions as hash family"""
+    """
+    :param k: the number of hash funcs in hash family
+    :return k hash functions: a list
+    """
 
     result = [hashlib.md5() for i in range(k)]
 
@@ -10,4 +13,6 @@ def genHashFamily(k):
         result[j].update(str(j).encode())
 
     return result
+
+
 

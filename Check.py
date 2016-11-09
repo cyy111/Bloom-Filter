@@ -1,6 +1,11 @@
 
 def checkWord(word, hashFamily, bitArray):
-    """check if the word can be map in bit array correctly with hash family"""
+    """
+    :param word: a string
+    :param hashFamily: a list
+    :param bitArray: a binary list
+    :return: the word in bitArray or not
+    """
 
     m = len(bitArray)
 
